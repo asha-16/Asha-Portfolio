@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Frontend Developer Portfolio" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+
+  <!-- Icons -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
+
+  <title> Asha | Frontend Developer</title>
+</head>
+<body>
+
+  <!-- ===== HEADER / NAVIGATION ===== -->
+  <header class="site-header">
+    <nav class="navbar">
+      <a href="#home" class="logo">Asha</a>
+
+      <button class="nav-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="nav-actions">
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#projects">Portfolio</a></li>
+        </ul>
+      </div>
+
+      <a href="#contact" class="btn btn-primary nav-hire">Hire Me</a>
+    </nav>
+  </header>
+
+
+  <main>
+    <!-- ===== HERO  ===== -->
+    <section id="home" class="hero section reveal">
+      <div class="container hero-grid">
+
+        <!-- LEFT CONTENT -->
+        <div class="hero-content">
+          <p class="text-muted hero-intro">
+            Hi, I am <span class="name">Asha</span>
+          </p>
+
+          <h1 class="heading-xl">
+            <span class="text-gradient">Frontend Developer</span>
+          </h1>
+
+          <p class="hero-desc text-muted">
+            I build clean, responsive, and user-friendly web interfaces.
+          </p>
+
+          <!-- SOCIAL ICONS -->
+          <div class="hero-socials">
+            <a href="https://github.com/asha-16" aria-label="GitHub" class="social-link" target="_blank">
+              <i class="ri-github-fill"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/ashahp11/" aria-label="LinkedIn" class="social-link" target="_blank">
+              <i class="ri-linkedin-box-fill"></i>
+            </a>
+          </div>
+
+          <!-- CTA BUTTONS -->
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">Hire Me</a>
+             <a href="PDF\Asha-updatedResume.pdf" class="btn btn-secondary" download>Download CV</i></a>
+          </div>
+        </div>
+
+        <!-- RIGHT IMAGE -->
+        <div class="hero-image">
+          <div class="image-backdrop"></div>
+          <img src="assets/images/asha.jpeg" alt="Asha profile photo" />
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== ABOUT PAGE ===== -->
+    <section id="about" class="section about reveal">
+        <div class="container">
+
+          <!-- SECTION HEADING -->
+          <h2 class="heading-lg section-title">About Me</h2>
+
+          <div class="about-grid">
+
+            <!-- LEFT: IMAGE -->
+            <div class="about-image">
+              <div class="image-backdrop"></div>
+              <img src="assets/images/asha.jpeg" alt="Asha profile photo" />
+            </div>
+
+            <!-- RIGHT: CONTENT -->
+            <div class="about-content">
+              <p class="about-role"> Frontend Web Developer</p>
+
+              <p class="text-muted about-text">
+                I’m a frontend developer focused on building clean, responsive
+                interfaces using HTML, CSS, and JavaScript. I enjoy turning designs
+                into functional, accessible experiences while continuously improving
+                my skills.
+              </p>
+
+              <!-- STATS CARDS -->
+              <div class="stats-grid reveal">
+                <div class="stat-card">
+                  <span class="stat-value text-gradient">01</span>
+                  <span class="stat-label">Internship Completed</span>
+                </div>
+
+                <div class="stat-card">
+                  <span class="stat-value text-gradient">04</span>
+                  <span class="stat-label">Projects Built</span>
+                </div>
+
+                <div class="stat-card">
+                  <span class="stat-value text-gradient">6+</span>
+                  <span class="stat-label">Tech Stacks Mastered</span>
+                </div>
+              </div>
+
+              <div class="about-actions">
+                <a href="#contact" class="btn btn-primary">Hire Me</a>
+                 <a href="PDF\Asha-updatedResume.pdf" class="btn btn-secondary" download>Download CV</i></a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+    </section>
+
+    <!-- ===== SERVICES PAGE ===== -->
+    <section id="services" class="section services reveal">
+        <div class="container">
+
+          <!-- SECTION HEADING -->
+          <h2 class="heading-lg section-title">What I Do</h2>
+
+          <!-- SERVICES GRID -->
+          <div class="services-grid reveal">
+
+            <!-- SERVICE CARD 1 -->
+            <div class="service-card ">
+              <div class="service-icon">
+                <i class="ri-code-line"></i>
+              </div>
+              <h3 class="service-title">Frontend Development</h3>
+              <p class="service-text">
+                Building clean, structured, and scalable user interfaces using HTML,
+                CSS, and JavaScript.
+              </p>
+              <button class="service-link" data-service="frontend"> See details → </button>
+            </div>
+
+            <!-- SERVICE CARD 2 -->
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="ri-smartphone-line"></i>
+              </div>
+              <h3 class="service-title">Responsive Web Design</h3>
+              <p class="service-text">
+                Creating mobile-first layouts that adapt smoothly across desktop,
+                tablet, and mobile devices.
+              </p>
+              <button class="service-link" data-service="responsive"> See details → </button>
+            </div>
+
+            <!-- SERVICE CARD 3 -->
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="ri-speed-line"></i>
+              </div>
+              <h3 class="service-title">UI/UX Design to Code</h3>
+              <p class="service-text">
+                Converting Figma designs into pixel-perfect, responsive, and
+                functional web interfaces.
+              </p>
+              <button class="service-link" data-service="figma"> See details → </button>
+            </div>
+
+          </div>
+        </div>
+    </section>
+
+    <!-- ===== PROJECTS PAGE ===== -->
+    <section id="projects" class="section projects reveal">
+        <div class="container">
+
+          <!-- SECTION HEADING -->
+          <h2 class="heading-lg section-title">Projects</h2>
+
+          <!-- PROJECTS GRID -->
+          <div class="projects-grid reveal">
+
+            <!-- PROJECT CARD 1 -->
+             <article class="project-card ">
+              <header class="project-header">
+                <h3 class="project-title">Explore Bangalore</h3>
+
+                <div class="project-links">
+                  <a href="https://github.com/asha-16/bangalore-tourism-website" aria-label="GitHub repository" target="_blank">
+                    <i class="ri-github-line"></i>
+                  </a>
+                  <a href="https://bangalore-tourism-guide.netlify.app/" aria-label="Live demo" target="_blank">
+                    <i class="ri-external-link-line"></i>
+                  </a>
+                </div>
+              </header>
+
+              <p class="project-description">
+                A modern tourist guide web application that helps users discover
+                Bangalore’s attractions, food, culture, and travel essentials
+                through a clean and intuitive interface.
+              </p>
+
+              <ul class="tech-stack">
+                <li>React (Vite)</li>
+                <li>CSS3</li>
+              </ul>
+            </article>
+            
+
+            <!-- PROJECT CARD 2 -->
+            <article class="project-card">
+              <header class="project-header">
+                <h3 class="project-title">GTG Perfumes</h3>
+
+                <div class="project-links">
+                  <a href="https://github.com/asha-16/cube-ui-assignment" aria-label="GitHub repository" target="_blank">
+                    <i class="ri-github-line"></i>
+                  </a>
+                  <a href="https://cube-ui-assignment.vercel.app/" aria-label="Live demo" target="_blank">
+                    <i class="ri-external-link-line"></i>
+                  </a>
+                </div>
+              </header>
+
+              <p class="project-description">
+                A modern, interactive frontend for a perfume brand showcasing
+                products, collections, comparisons, and subscription options with
+                strong emphasis on UI polish and responsiveness.
+              </p>
+
+              <ul class="tech-stack">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+            </article>
+
+
+            <!-- PROJECT CARD 3 -->
+            <article class="project-card">
+              <header class="project-header">
+                <h3 class="project-title">Frontend Mentor Projects Hub</h3>
+
+                <div class="project-links">
+                  <a href="https://github.com/asha-16/frontend-mentor-projects" aria-label="GitHub repository" target="_blank">
+                    <i class="ri-github-line"></i>
+                  </a>
+                  <a href="https://asha-16.github.io/frontend-mentor-projects/" aria-label="Live demo" target="_blank">
+                    <i class="ri-external-link-line"></i>
+                  </a>
+                </div>
+              </header>
+
+              <p class="project-description">
+                A personal portfolio platform showcasing my Frontend Mentor
+                challenges with live previews, GitHub source links, and fully
+                responsive UI implementations.
+              </p>
+
+              <ul class="tech-stack">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+            </article>
+
+            <!-- PROJECT CARD 4 -->
+            <article class="project-card">
+              <header class="project-header">
+                <h3 class="project-title">Remote Interview Platform</h3>
+
+                <div class="project-links">
+                  <a href="https://github.com/asha-16/Intervue" aria-label="GitHub repository" target="_blank">
+                    <i class="ri-github-line"></i>
+                  </a>
+                  <a href="https://intervue-frontend.onrender.com" aria-label="Live demo" target="_blank">
+                    <i class="ri-external-link-line"></i>
+                  </a>
+                </div>
+              </header>
+
+              <p class="project-description">
+                A feature-rich remote interview platform designed for conducting
+                technical interviews with integrated code editor, video meetings,
+                real-time chat, screen sharing, and automated code evaluation.
+              </p>
+
+              <ul class="tech-stack">
+                <li>MongoDB</li>
+                <li>Express</li>
+                <li>React</li>
+                <li>Node.js</li>
+                <li>WebSockets</li>
+              </ul>
+            </article>
+
+          </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACTS PAGE ===== -->
+    <section id="contact" class="section contact reveal">
+      <div class="container">
+
+        <!-- SECTION HEADING -->
+        <h2 class="heading-lg section-title">Contact Me</h2>
+
+        <div class="contact-grid reveal">
+
+          <!-- LEFT: CONTACT INFO -->
+          <div class="contact-info card">
+
+            <h3 class="contact-heading">Contact Info</h3>
+
+            <ul class="contact-list">
+              <li class="contact-item">
+                <div class="contact-icon">
+                  <i class="ri-mail-send-fill"></i>
+                </div>
+                <div class="contact-text">
+                  <p class="contact-value">ashahp.work@gmail.com</p>
+                  <a
+                      href="https://mail.google.com/mail/?view=cm&to=ashahp.work@gmail.com&su=Frontend%20Developer%20Opportunity&body=Hi%20Asha,%0A%0AI%20came%20across%20your%20portfolio%20and%20would%20like%20to%20connect%20with%20you.%0A%0ABest%20regards,"
+                      target="_blank"
+                      rel="noopener"
+                      class="contact-link"
+                    >
+                      Send <i class="ri-arrow-right-up-line"></i>
+                    </a>
+                </div>
+              </li>
+
+              <li class="contact-item">
+                <div class="contact-icon">
+                  <i class="ri-whatsapp-line"></i>
+                </div>
+                <div class="contact-text">
+                  <p class="contact-value">+91 9880XXXXXX</p>
+                  <a
+                    href="https://wa.me/919880543284?text=Hi%20Asha%2C%20I%20came%20across%20your%20portfolio%20and%20would%20like%20to%20connect%20with%20you%20regarding%20frontend%20development%20opportunities."
+                    target="_blank"
+                    class="contact-link"
+                  >
+                    Send <i class="ri-arrow-right-up-line"></i>
+                  </a>
+                </div>
+              </li>
+            </ul>
+
+            <h3 class="contact-heading">Social</h3>
+
+            <div class="contact-socials">
+              <a href="https://www.linkedin.com/in/ashahp11/" target="_blank" aria-label="LinkedIn">
+                <i class="ri-linkedin-box-fill"></i>
+              </a>
+              <a href="https://github.com/asha-16" target="_blank" aria-label="GitHub">
+                <i class="ri-github-fill"></i>
+              </a>
+            </div>
+
+          </div>
+
+          <!-- RIGHT: CONTACT FORM -->
+          <div class="contact-form card">
+            <h3 class="form-title">
+              Let’s work <span class="text-gradient">together</span>
+            </h3>
+
+            <p class="form-subtext text-muted">
+              Fill out the form below and I’ll get back to you as soon as possible.
+            </p>
+
+            <form id="contactForm" class="form" action="https://formspree.io/f/xwvkkzoo" method="POST">
+
+              <input type="text" name="name" placeholder="Your Name *" required />
+              <input type="email" name="email" placeholder="Your Email *" required />
+              <input type="text" name="subject" placeholder="Subject *" required />
+              <textarea   name="message" placeholder="Your Message *" required></textarea>
+
+              <div class="form-actions">
+                <button type="submit" class="btn btn-primary">
+                  Send Message
+                </button>
+
+                <span class="form-success">
+                  <i class="ri-checkbox-circle-fill"></i>
+                  Message sent successfully
+                </span>
+              </div>
+
+              <input type="text" name="_gotcha" style="display:none">
+
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- SERVICE MODAL -->
+  <div class="modal-overlay" id="serviceModal" aria-hidden="true">
+    <div class="modal">
+      <button class="modal-close" aria-label="Close modal">
+        <i class="ri-close-line"></i>
+      </button>
+
+      <h3 class="modal-title"></h3>
+
+      <div class="modal-content"></div>
+    </div>
+  </div>
+
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+
+      <!-- MAIN ROW -->
+      <div class="footer-main">
+
+        <!-- BRAND -->
+        <div class="footer-brand">
+          <a href="#home" class="logo text-gradient">Asha.</a>
+          <span class="footer-role">Frontend Developer</span>
+        </div>
+
+        <!-- QUICK LINKS -->
+        <div class="footer-links">
+          <span class="footer-title">Quick Links</span>
+          <nav>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About Me</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <!-- CONNECT -->
+        <div class="footer-connect">
+          <span class="footer-title">Connect</span>
+          <div class="footer-socials">
+            <a href="https://github.com/asha-16" aria-label="GitHub">
+              <i class="ri-github-fill"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/ashahp11/" aria-label="LinkedIn">
+              <i class="ri-linkedin-box-fill"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- BOTTOM ROW -->
+      <div class="footer-bottom">
+        <p>© 2025 Asha. All rights reserved.</p>
+        <a href="#home" class="back-to-top">
+          ↑ Back to top
+        </a>
+      </div>
+
+    </div>
+  </footer>
+
+
+
+
+
+
+
+  
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>
