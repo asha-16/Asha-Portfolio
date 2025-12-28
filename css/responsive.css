@@ -95,6 +95,65 @@
      margin-top: var(--space-5);
   }
 
+  /* =====  SKILLS   ===== */
+  .skills-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .timeline-wrapper {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    gap: 32px;
+    height: auto;
+    padding: 40px 0;
+  }
+
+ .timeline-wrapper::before {
+  display: none;
+}
+
+  .timeline-item {
+    display: contents;
+  }
+
+  .skill-icon {
+    grid-column: 1;
+    justify-self: center;
+    margin-top: 4px;
+    position: relative;
+  }
+
+  .skill-icon::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    width: 38px;
+    height: 2px;
+    background: var(--color-primary);
+    transform: translateY(-50%);
+    border-top: 2px dashed var(--color-primary);
+  background: none;
+  }
+
+  .skills-title {
+    text-align: center;
+  }
+
+  /* Card column */
+  .timeline-card {
+    grid-column: 2;
+    position: relative;
+    transform: none !important;
+    margin: 0;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
 /* =====  SERVICES   ===== */
    .services-grid {
     grid-template-columns: 1fr;

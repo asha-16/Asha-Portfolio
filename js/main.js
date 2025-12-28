@@ -1,9 +1,37 @@
+
+//navbar
 const navToggle = document.querySelector(".nav-toggle");
 const navActions = document.querySelector(".nav-actions");
 
 navToggle.addEventListener("click", () => {
   navActions.classList.toggle("active");
 });
+
+
+const navSections = document.querySelectorAll("section[id]");
+const navLinks = document.querySelectorAll(".nav-link");
+
+const navObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const currentId = entry.target.id;
+
+        navLinks.forEach(link => {
+          link.classList.toggle(
+            "active",
+            link.getAttribute("href") === `#${currentId}`
+          );
+        });
+      }
+    });
+  },
+  {
+    threshold: 0.6
+  }
+);
+
+navSections.forEach(section => navObserver.observe(section));
 
 
 
@@ -95,9 +123,6 @@ contactForm.addEventListener("submit", (e) => {
 });
 
 
-
-
-
 //scroll reveal
 const revealElements = document.querySelectorAll(".reveal");
 
@@ -116,3 +141,14 @@ const observer = new IntersectionObserver(
 );
 
 revealElements.forEach((el) => observer.observe(el));
+
+
+//Track CV clicks
+document.querySelectorAll(".cv-download").forEach(btn => {
+  btn.addEventListener("click", () => {
+    console.log("CV downloaded");
+  });
+});
+
+
+
